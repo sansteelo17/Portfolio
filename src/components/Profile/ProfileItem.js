@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAnimation, motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
@@ -32,7 +33,11 @@ const ProfileItem = ({ id, title, desc, image, tech, link }) => {
       animate={controls}
       ref={projectRef}
     >
-      <img src={image} className="w-full h-full object-cover overflow-hidden" />
+      <Image
+        src={image}
+        className="w-full h-full object-cover overflow-hidden"
+        alt={props.title}
+      />
       <div className="w-full text-center z-20">
         <h3 className="text-xl sm:text-2xl lg:text-3xl p-1.5 text-red-600 tracking-wide kanit">
           {title}
