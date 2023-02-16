@@ -26,7 +26,7 @@ const Hero = ({ dropdownIsActive }) => {
       </div>
       <div>
         <button className="py-2 px-4 rounded-lg text-sm sm:text-lg lg:text-2xl bg-red-800 hover:bg-red-900">
-          <Link href="">Learn More</Link>
+          <Link href="mailto:gakpovwovwo@gmail.com">Learn More</Link>
         </button>
       </div>
     </motion.div>
