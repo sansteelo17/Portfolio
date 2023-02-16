@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import Paragraph from "../UI/Paragraph";
@@ -64,15 +65,17 @@ const Technologies = () => {
           <FontAwesomeIcon icon={faNpm} />
         </div>
         <div>
-          <img
+          <Image
             src="https://www.svgrepo.com/download/354478/typescript-icon.svg"
             className="w-6 h-6 lg:w-8"
+            alt="typescript image"
           />
         </div>
         <div>
-          <img
+          <Image
             src="https://cdn.auth0.com/blog/logos/nextjs-logo.png"
             className="w-6 h-6 lg:w-8"
+            alt="nextjs image"
           />
         </div>
       </div>
